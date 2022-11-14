@@ -1,0 +1,357 @@
+/*Common Css start**/
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+} 
+ul, ol,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+    color: black;
+}
+p{
+    margin: 0%;
+    padding: 0%;
+    color: rgb(54, 53, 53);
+}
+img{
+     vertical-align: middle;
+}
+:root{
+    --primary:#0771b5;
+    --secondary: #5bc5f3;
+    --second: #5ddae3;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+}
+font{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+/*Common Css end*/
+/* Navber part start */
+.naver_part{
+   background: #FAF8F8;
+   border-bottom: 1px solid #ddd;
+}
+.logo p{
+    font-size: 20px;
+    padding-top: 3px;
+    color: #0149A1;
+}
+.logo h3{
+    color: #0149A1;
+    font-weight: 700;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: rgb(76, 75, 75);
+    font-size: 18px;
+    transition: .5s;
+}
+.navbar-nav :hover .nav-link.active, .navbar-nav .show>.nav-link{
+    color:rgb(18, 21, 242);
+    transition: 0.5s;
+    background: rgba(164, 162, 162, 0.635);
+    border-radius: 30px;
+   
+}
+.navbar_icon i{
+    color: #3962d2;
+    font-size: 18px;
+    transition: 0.6s;
+    border: 1px solid rgb(203, 199, 199);
+    padding: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.navbar_icon i:hover{
+    color: var(--bs-red);
+    transform: rotate(500deg);
+}
+/* Navber part End */
+/* Slider part Start */
+.slider_part{
+    background: linear-gradient(rgb(251, 249, 249),#f4f3f3,#e6e7e8);
+}
+.slider_lidder_head h1{
+    color: #0149A1;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 55px;
+}
+.slider_lidder_head p{
+    font-size: 20px;
+    
+}
+.slider_button button{
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    background: #FF2D55;
+    color: white;
+    transition: .4s;
+    font-weight: 600;
+}
+.slider_button button:hover{
+    background: rgb(81, 137, 240);
+    color: rgb(250, 250, 250);
+    box-shadow: rgba(0, 0, 0, 0.766) 0px 3px 8px;
+    transform: scale(1.04);
+}
+.slider_contant_main{
+    position: relative;
+}
+.slider_bg_icon_img_01 img {
+    position: absolute;
+    top: 75px;
+    left: 230px;
+    
+}
+.slider_bg_icon_img_02 img{
+    position: absolute;
+    top: 75px;
+    left: 730px;
+}
+.leptop_img{
+    position: relative;
+    overflow: hidden;
+}
+.leptop_overlay_img:hover img{
+    transform: scale(1.1);
+}
+.leptop_overlay_img{
+    position: absolute;
+    top: -50;
+    left: 97px;
+    bottom: 90px;
+    overflow: hidden;
+
+}
+.leptop_overlay_img img{
+    transition: linear .3s;
+}
+.leptop_overlay_img:hover .leptop_bg_overlay{
+    opacity: 1;
+}
+.leptop_bg_overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .4s;
+    
+}
+.leptop_bg_overlay button{
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition:all .4s;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.leptop_bg_overlay button:hover{
+    background: rgb(81, 137, 240);
+    color: rgb(250, 250, 250);
+    box-shadow: rgba(0, 0, 0, 0.766) 0px 3px 8px;
+    transform: scale(1.04);
+}
+/* Slider part End */
+/* Service Part Start */
+.service_part{
+    background: linear-gradient(#E7E8E9,#f1f1f1,#f1f0f0,#e0dfdf,#ddd);
+}
+/* Service Part End */
+/* Creativity Part Start */
+.creativity_part{
+    background: url(./asestan/img/creativity_bg_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+   
+}
+.creativity_part:hover .creativity_overlay {
+    opacity: 1;
+    
+}
+.creativity_overlay{
+    background: rgba(55, 55, 254, 0.3);
+    height: 100%;
+    width: 100%;
+    background-attachment: scroll;
+    top: 0;
+    left: 0;
+    transition:all linear .4s;
+    opacity: 0;
+  
+}
+.cretivity_button button{
+    margin: 200px 0 170px 0;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #0149A1;
+    color: white;
+    transition: .5s;
+    font-weight: 700;
+    
+}
+.cretivity_button button:hover{
+    background: aqua;
+    color: red;
+}
+/* Creativity Part End */
+/* Working_part Start */
+.working_part{
+    background: #0149A1;
+}
+.working_lidder h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 35px;
+}
+.working_lidder p{
+    font-size: 22px;
+    color: rgb(185, 184, 184);
+}
+.working_contant p{
+    color: rgb(243, 242, 242);
+}
+.working_button button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    color: #0149A1;
+    font-weight: 600;
+    transition: .4s;
+}
+.working_button button:hover{
+    background: rgb(81, 137, 240);
+    color: rgb(250, 250, 250);
+    box-shadow: rgba(0, 0, 0, 0.896) 0px 3px 8px;
+    transform: scale(1.04);
+}
+/* Working_part End */
+/* Testimonial part start */
+.testi_con_main{
+    width: 55%;
+    margin: auto;
+    transition: all linear 1s;
+}
+
+/* Testimonial part End */
+/* Team part Satar */
+.team_part{
+    background: #EDEFF1;
+}
+.team_lidder h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: #4049f6;
+    line-height: 35px;
+}
+.team_lidder p{
+    font-size: 22px;
+    color: rgb(103, 102, 102);
+}
+.team_contant h5{
+    font-weight: 800;
+}
+.team_button button{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #FF2D55;
+    color: white;
+    transition: .4s;
+}
+.team_button button:hover{
+    background: rgb(81, 137, 240);
+    color: rgb(250, 250, 250);
+    box-shadow: rgba(0, 0, 0, 0.766) 0px 3px 8px;
+    transform: scale(1.04);
+}
+/* Team part End */
+/* footer part Start */
+.footer_part{
+    background: #0149A1;
+}
+.footer_con_main li{
+    color: white;
+    line-height: 30px;
+}
+/* footer part End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:992px) and (max-width:1199px){}
+@media (min-width:768px) and (max-width:991px){}
+@media (min-width:576px) and (max-width:767px){
+    /* Footer Part Start */
+    .footer_con_main{
+        width: 180px;
+        margin: auto;
+        
+    }
+    /* Footer Part End */
+}
+@media (min-width:320px) and (max-width:575px){
+    
+    /* Slider Part Start */
+    .slider_contant_main{
+        display: none;
+    }
+    /* Slider Part End */
+    .service_con_main{
+        width: 310px;
+        margin: auto;
+    }
+   /* Warking Part Start */
+   .working_con_img img{
+       width: 300px;
+       margin: auto;
+    }
+    /* Warking Part End */
+    /* Team Part Start */
+    .team_con_main{
+        width: 300px;
+        margin: auto;
+    }
+    /* Team Part End */
+    /* Footer Part Start */
+    .footer_con_main{
+        width: 180px;
+        margin: auto;
+        
+    }
+    /* Footer Part Start */
+}
+@media (min-width:250px) and (max-width:319px){}
+
